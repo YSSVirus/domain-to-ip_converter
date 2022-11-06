@@ -5,7 +5,7 @@ from colorama import Fore, Back, Style
 def main():#we use this function setup to maintain tidyness
 	def argument_parsing():
 		#here we crate the parser argument, we add in usage and description so users have a better understanding of the script
-		parser = argparse.ArgumentParser(usage='python3 domain-ip.py', description="This script is made for finding the ip/ip's behind a domain, it also by default will print out the unique ip'sseperately aswell.")
+		parser = argparse.ArgumentParser(usage='python3 domain-ip.py', description="This script is made for finding the ip/ip's behind a domain, it also by default will print out the unique ip's seperately aswell.")
 		domain_parser = argparse.ArgumentParser() # This is a small seperation this is our domain parser, this is seperated as i had to make seperate rules
 		domain = parser.add_mutually_exclusive_group(required=True) #This makes one of the the options mandetory
 		domain.add_argument('-domain', '--domain', '-d', '--d', help='This argument is for resolving the ips of a single domain.')
